@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.admin import ModelAdmin
 
-from .models import Book
+from .models import *
 
 
 # class TodoAdmin(admin.ModelAdmin):
@@ -15,6 +15,10 @@ from .models import Book
 
 @admin.register(Book)
 class BookAdmin(ModelAdmin):
+    pass
+
+@admin.register(UserBookRelation)
+class UserBookRelation(ModelAdmin):
     pass
 
 # admin.site.register(Book, TodoAdmin)
